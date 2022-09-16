@@ -71,7 +71,7 @@
 
       <div style="display: flex; flex-direction: column; gap: 1rem">
         <label for="">Light Description</label>
-        <select v-model="report" @change="Filter">
+        <select v-model="light" @change="Filter">
           <option value="">No Filter</option>
           <option :value="l" :key="i" v-for="(l, i) in light_desc">
             {{ l }}
